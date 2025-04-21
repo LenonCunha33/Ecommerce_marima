@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const colors = ["#4285F4", "#EA4335", "#FBBC05", "#34A853"];
+const colors = ["#DCDCDC", "#696969", "#363636", "#1C1C1C"];
 
 export default function GoogleLoader() {
   return (

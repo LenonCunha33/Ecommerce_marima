@@ -75,11 +75,22 @@ import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import logo_768 from './1.png'
 import logo_1575 from './2.png'
-import logo_769 from './Foto Meio roxa.png'
-import logo_770 from './Foto Meioazul.png'
+import logo_769 from './02.png'
+import logo_770 from './03.png'
 import logo_M from './M_logotipo.png'
 import logo_C from './Marimaa.png'
 import bv from './BemVindo.png'
+import Fitness from './Fitness.png'
+import Tops from './Tops.png'
+import Calcas from './calcas.png'
+import Bodies from './bodies.png'
+import Macacoes from './macacoes.png'
+import Casual from './Casual.png'
+import Blusas from './blusase.png'
+import Shorts from './shortse.png'
+import Jaquetas from './jacketase.png'
+import Lancamentos from './lancamentos.png'
+import hero_video from './1.mp4'
 
 
 
@@ -108,7 +119,18 @@ export const assets = {
     logo_770,
     logo_M,
     logo_C,
-    bv
+    bv,
+     Fitness,
+ Tops,
+ Calcas,
+ Bodies,
+ Macacoes,
+ Casual,
+ Blusas,
+ Shorts,
+ Jaquetas,
+ Lancamentos,
+ hero_video
 }
 
 export const products = [

@@ -47,7 +47,7 @@ const Contact = () => {
 
                     {/* Botão com animação de escala e cor de fundo */}
                     <motion.button
-                        className='border border-black px-8 py-3 text-sm hover:bg-black hover:text-white transition-all duration-500'
+                        className='border border-black px-8 py-3 text-sm hover:bg-black hover:text-white transition-all duration-500 cursor-pointer'
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         transition={{ duration: 0.3 }}

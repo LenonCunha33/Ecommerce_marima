@@ -12,7 +12,7 @@ import PlaceOrder from './pages/PlaceOrder';
 import Orders from './pages/Orders';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import SearchBar from './components/SearchBar';
+import Products from './pages/Products';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import BestSale from './pages/BestSale';
@@ -68,15 +68,15 @@ const App = () => {
           >
             <ToastContainer />
             <Navbar />
-            <SearchBar />
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path="/collection" element={<Collection />} />
               <Route path="/bestsellers" element={<BestSale />} />
-              <Route path="/gallery" element={<LuxuryMonogramGallery />} />
+              <Route path="/lancamentos" element={<LuxuryMonogramGallery />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/product/:productId" element={<Product />} />
+              <Route path='/products' element={<Products />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/login" element={<Login />} />
               <Route path="/place-order" element={<PlaceOrder />} />

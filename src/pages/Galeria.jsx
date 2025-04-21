@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 export default function LuxuryMonogramGallery() {
   return (
     <div className="text-gray-900 font-serif">
-      {/* Seção 1 - Texto + 1 Imagem à direita */}
-      <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
-        {/* Texto à esquerda */}
+      {/* Seção 1 - Texto + Imagem à direita (responsivo) */}
+      <section className="min-h-[80vh] flex flex-col-reverse lg:flex-row w-full">
+        {/* Texto */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center p-10 lg:p-20 bg-black w-full"
+          className="flex items-center justify-center p-10 lg:p-20 bg-white lg:w-[700px] w-full z-10"
         >
-          <div className="space-y-6 max-w-sm">
-            <h1 className="text-4xl lg:text-5xl leading-snug text-white">
+          <div className="space-y-6 max-w-sm text-center lg:text-left">
+            <h1 className="text-4xl lg:text-5xl leading-snug text-black">
               Os<br />
               Melhores<br />
               Produtos<br />
               Lançados
             </h1>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-900 leading-relaxed">
               Confira Agora<br />
               100% da Coleção<br />
               Outono & Inverno
@@ -30,13 +30,13 @@ export default function LuxuryMonogramGallery() {
           </div>
         </motion.div>
 
-        {/* Imagem com animação de zoom e fade */}
+        {/* Imagem expandida */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
           viewport={{ once: true }}
-          className="w-full h-full"
+          className="flex-grow lg:-ml-20 overflow-hidden w-full h-[400px] lg:h-auto"
         >
           <motion.img
             src={assets.logo_768}

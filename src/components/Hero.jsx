@@ -26,13 +26,16 @@ const Hero = () => {
             </motion.div>
 
             {/* Hero Lado Direito */}
-            <motion.img
+            <motion.video
                 className='w-full sm:w-1/2 object-cover'
-                src={assets.hero_img}
+                src={assets.hero_video}
                 alt="Hero Banner"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                loop
+                muted
+                autoPlay
             />
         </div>
     );
